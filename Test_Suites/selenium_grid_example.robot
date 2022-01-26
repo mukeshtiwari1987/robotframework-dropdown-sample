@@ -1,22 +1,39 @@
 *** Settings ***
-Documentation         This is just a tutorial
-...
-Metadata              VERSION    0.1
-Library               SeleniumLibrary
-Suite Setup           Start Browser
-Suite Teardown        Close Browser
+Library             Collections
+Library             SeleniumLibrary
+Test Template       Select By Value And Label To Verify Selection
+Suite Setup         Browser Setup
+Suite Teardown      Close All Browsers
 
 *** Variables ***
-${TEST_URL}           https://www.google.co.in
-${BROWSER}            Chrome
-${HUB_URL}            http://192.168.53.5:4444/wd/hub
+${URL}                 http://test.mukeshtiwari.com/cascading_dropdown/
+${BROWSER}             Chrome
+${HUB_URL}             http://192.168.53.5:4444/wd/hub
+${pcategoryLocator}    id:pcategory
+${categoryLocator}     id:category
+
+*** Test Cases ***    pcategoryValue    categoryLabel
+Animal Lion           Animal            Lion
+Animal Tiger          Animal            Tiger
+Animal Elephant       Animal            Elephant
+Animal Hippo          Animal            Hippo
+Bike Bajaj            Bike              Bajaj
+Bike Hero             Bike              Hero
+Bike TVS              Bike              TVS
+Bike Bullet           Bike              Bullet
+Bike Hayabusa         Bike              Hayabusa
+Cars Mercedes         Cars              Mercedes
+Cars BMW              Cars              BMW
+Cars Maruti           Cars              Maruti
+Cars Volkswagen       Cars              Volkswagen
 
 *** Keywords ***
-Start Browser
-    [Documentation]   Start Chrome browser on Selenium Grid
-    Open Browser      ${TEST_URL}   ${BROWSER}   None    ${HUB_URL}
+Browser Setup
+    Open Browser      ${URL}   ${BROWSER}   None    ${HUB_URL}
+    Maximize Browser Window
 
-*** Test Cases ***
-Check something
-    [Documentation]   Check the page title
-    Title Should Be   Google
+Select By Value And Label To Verify Selection
+    [Arguments]    ${pcategoryValue}    ${categoryLabel}
+    Select From List By Value    ${pcategoryLocator}    ${pcategoryValue}
+    Select From List By Label    ${categoryLocator}     ${categoryLabel}
+    List Selection Should Be     ${categoryLocator}     ${categoryLabel}

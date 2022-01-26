@@ -1,0 +1,1 @@
+/var/lib/jenkins/workspace/$JOB_NAME/PCloudy_Runner.sh ${appium_server} ${platform} ${deviceVersion} ${manufacturerName} ${app_name} ${app_id} ${app_package} ${test_type} ${Test_Path}'''
