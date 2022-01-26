@@ -1,7 +1,7 @@
 *** Settings ***
 Library         Collections
 Library         SeleniumLibrary
-Library         DataDriver    file=${CURDIR}/mydata.xlsx
+Library         DataDriver    file=${CURDIR}/../Test_Data/mydata.xlsx
 Test Template   Select By Value And Label To Verify Selection
 Suite Setup     Browser Setup
 Suite Teardown  Close All Browsers
