@@ -8,7 +8,7 @@ Suite Teardown      Close All Browsers
 *** Variables ***
 ${URL}                 http://test.mukeshtiwari.com/cascading_dropdown/
 ${BROWSER}             Chrome
-${HUB_URL}             http://192.168.53.5:4444/wd/hub
+${HUB_URL}             192.168.53.5
 ${pcategoryLocator}    id:pcategory
 ${categoryLocator}     id:category
 
@@ -29,7 +29,7 @@ Cars Volkswagen       Cars              Volkswagen
 
 *** Keywords ***
 Browser Setup
-    Open Browser      ${URL}   ${BROWSER}   None    ${HUB_URL}
+    Open Browser      ${URL}   ${BROWSER}   None    http://${HUB_URL}:4444/wd/hub
     Maximize Browser Window
 
 Select By Value And Label To Verify Selection
