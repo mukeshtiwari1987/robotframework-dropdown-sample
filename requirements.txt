@@ -1,2 +1,4 @@
-robotframework-seleniumlibrary==5.1.0
-robotframework-datadriver==1.5.0
+robotframework-pabot
+robotframework-seleniumlibrary
+robotframework-datadriver
+robotframework-datadriver[XLS]

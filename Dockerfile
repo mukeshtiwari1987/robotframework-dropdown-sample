@@ -5,6 +5,11 @@ FROM ubuntu:20.04
 LABEL description Robot Framework in Docker.
 
 #===============================================
+# Set the working directory environment variable
+#===============================================
+ENV ROBOT_WORK_DIR /opt/robotframework
+
+#===============================================
 # Set the reports directory environment variable
 #===============================================
 ENV ROBOT_REPORTS_DIR /opt/robotframework/reports
@@ -14,10 +19,15 @@ ENV ROBOT_REPORTS_DIR /opt/robotframework/reports
 #=============================================
 ENV ROBOT_TESTS_DIR /opt/robotframework/tests
 
+#=================================================
+# Set the tests directory environment variable
+#=================================================
+ENV ROBOT_TESTS_SPECIFIC /
+
 #===============================================
-# Set the working directory environment variable
+# Set the hub url
 #===============================================
-ENV ROBOT_WORK_DIR /opt/robotframework
+ENV hub_url 192.168.53.5
 
 #===========================================
 # Setup the timezone to use, defaults to UTC
@@ -79,24 +89,33 @@ RUN exec "$@"
 RUN export PYTHONIOENCODING=utf8
 RUN echo "export PYTHONIOENCODING=utf8" >> ~/.bashrc
 
-#========================
-# Set up NewSDKAutomation
-#========================
-COPY App_Variables /NewSDKAutomation/App_Variables
-COPY Assets /NewSDKAutomation/Assets
-COPY OR_Keywords /NewSDKAutomation/OR_Keywords
-COPY Test_Data /NewSDKAutomation/Test_Data
-COPY TestSuites /NewSDKAutomation/TestSuites
-COPY Utils /NewSDKAutomation/Utils
-COPY PCloudy_Runner.py /NewSDKAutomation/PCloudy_Runner.py
-COPY PCloudy_Runner.sh /NewSDKAutomation/PCloudy_Runner.sh
-COPY requirements.txt /NewSDKAutomation/requirements.txt
+#======================================
+# Set up robotframework-dropdown-sample
+#======================================
+# COPY Test_Suites /robotframework-dropdown-sample/Test_Suites
+# COPY Test_Data /robotframework-dropdown-sample/Test_Data
+# COPY Robot_Runner.sh /robotframework-dropdown-sample/Robot_Runner.sh
+# COPY requirements.txt /robotframework-dropdown-sample/requirements.txt
 RUN find . -name '*.pyc' -delete
 RUN find . -name __pycache__ -delete
-RUN pip3 install --upgrade pip
-RUN pip3 install --upgrade setuptools
-RUN pip3 install --upgrade setuptools-scm
-RUN cd /NewSDKAutomation && ls && pip3 install -r requirements.txt --upgrade
+# RUN pip3 install --upgrade pip
+# RUN pip3 install --upgrade setuptools
+# RUN pip3 install --upgrade setuptools-scm
+RUN pip3 install \
+    --no-cache-dir \
+    pip \
+    setuptools \
+    setuptools-scm \
+    robotframework \
+    robotframework-seleniumlibrary \
+    robotframework-datadriver \
+    robotframework-datetime-tz \
+    robotframework-faker \
+    robotframework-requests \
+    robotframework-pabot
+
+RUN pip3 install --no-cache-dir -U robotframework-datadriver[XLS]
+# RUN cd /robotframework-dropdown-sample && ls && pip3 install -r requirements.txt
 
 #=============================================================================================
 # Create the default report and work folders with the default user to avoid runtime issues
@@ -107,6 +126,7 @@ RUN mkdir -p ${ROBOT_REPORTS_DIR} \
   && chown ${ROBOT_UID}:${ROBOT_GID} ${ROBOT_REPORTS_DIR} \
   && chown ${ROBOT_UID}:${ROBOT_GID} ${ROBOT_WORK_DIR} \
   && chmod ugo+w ${ROBOT_REPORTS_DIR} ${ROBOT_WORK_DIR}
+#   && sudo chmod +x /robotframework-dropdown-sample/Robot_Runner.sh
 
 #=============================
 # Allow any user to write logs
@@ -129,4 +149,5 @@ WORKDIR ${ROBOT_WORK_DIR}
 #==========================================
 # Create entrypoint and grab example tests
 #==========================================
-CMD ["/bin/bash","/NewSDKAutomation/Robot_Runner.sh"]
+CMD ["sh", "-c", "pabot --removekeywords wuks --suitestatlevel 3 --variable hub_url:${hub_url} --outputdir ${ROBOT_REPORTS_DIR} ${ROBOT_TESTS_DIR}${ROBOT_TESTS_SPECIFIC}"]
+# ENTRYPOINT ["/robotframework-dropdown-sample/Robot_Runner.sh"]
