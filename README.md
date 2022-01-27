@@ -35,7 +35,7 @@ docker run \
 	--platform=linux/amd64 \
 	-v /Users/mukeshtiwari/Documents/shastra/ncore_app/robotframework-dropdown-sample/reports:/opt/robotframework/reports: \
 	-v /Users/mukeshtiwari/Documents/shastra/ncore_app/robotframework-dropdown-sample:/opt/robotframework/tests: \
-    -e hub_url=192.168.53.5 \
+	-e hub_url=192.168.53.5 \
 	-e ROBOT_TESTS_SPECIFIC=/Test_Suites/selenium_grid_example.robot \
 	rds
 ```
