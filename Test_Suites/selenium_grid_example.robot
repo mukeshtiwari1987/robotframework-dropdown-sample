@@ -2,8 +2,8 @@
 Library             Collections
 Library             SeleniumLibrary
 
-Suite Setup         Browser Setup
-Suite Teardown      Close All Browsers
+# Suite Setup         Browser Setup
+# Suite Teardown      Close All Browsers
 Test Template       Select By Value And Label To Verify Selection
 
 *** Variables ***
@@ -29,16 +29,18 @@ Cars Maruti             Cars                Maruti
 Cars Volkswagen         Cars                Volkswagen
 
 *** Keywords ***
+Select By Value And Label To Verify Selection
+    [Arguments]    ${pcategoryValue}    ${categoryLabel}
+    Browser Setup
+    Select From List By Value    ${pcategoryLocator}    ${pcategoryValue}
+    Select From List By Label    ${categoryLocator}    ${categoryLabel}
+    List Selection Should Be    ${categoryLocator}    ${categoryLabel}
+    Log    ${TEST NAME}
+    Close All Browsers
+
 Browser Setup
     ${desired_caps} =    create dictionary    enableVNC=${True}
     Set To Dictionary    ${desired_caps}    name=${SUITE NAME}
     Open Browser    ${URL}    ${BROWSER}    None    http://${HUB_URL}:4444/wd/hub
     ...    desired_capabilities=${desired_caps}
     Maximize Browser Window
-
-Select By Value And Label To Verify Selection
-    [Arguments]    ${pcategoryValue}    ${categoryLabel}
-    Select From List By Value    ${pcategoryLocator}    ${pcategoryValue}
-    Select From List By Label    ${categoryLocator}    ${categoryLabel}
-    List Selection Should Be    ${categoryLocator}    ${categoryLabel}
-    Log    ${TEST NAME}

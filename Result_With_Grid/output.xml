@@ -1,834 +1,918 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 4.1.1 (Python 3.9.10 on darwin)" generated="20220307 23:49:51.309" rpa="false" schemaversion="2">
+<robot generator="Rebot 4.1.1 (Python 3.9.10 on darwin)" generated="20220307 23:54:26.536" rpa="false" schemaversion="2">
 <suite id="s1" name="Selenium Grid Example" source="/Users/mukeshtiwari/Documents/shastra/ncore_app/robotframework-dropdown-sample/Test_Suites/selenium_grid_example.robot">
-<kw name="Browser Setup" type="SETUP">
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:33.088" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:33.088" endtime="20220307 23:49:33.088"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:33.088" endtime="20220307 23:49:33.089"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.089" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.089" endtime="20220307 23:49:40.191"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.192" endtime="20220307 23:49:40.384"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:33.088" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:33.088" endtime="20220307 23:49:33.088"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:33.088" endtime="20220307 23:49:33.089"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.089" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.089" endtime="20220307 23:49:40.197"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.198" endtime="20220307 23:49:40.384"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:33.082" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:33.082" endtime="20220307 23:49:33.082"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:33.082" endtime="20220307 23:49:33.083"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.083" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.083" endtime="20220307 23:49:40.198"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.198" endtime="20220307 23:49:40.391"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:33.063" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:33.063" endtime="20220307 23:49:33.063"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:33.063" endtime="20220307 23:49:33.063"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.064" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.064" endtime="20220307 23:49:40.197"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.197" endtime="20220307 23:49:40.384"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:43.979" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:43.979" endtime="20220307 23:49:43.979"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:43.979" endtime="20220307 23:49:43.979"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:43.980" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:43.979" endtime="20220307 23:49:47.873"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:47.875" endtime="20220307 23:49:48.053"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:33.063" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:33.063" endtime="20220307 23:49:33.063"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:33.063" endtime="20220307 23:49:33.063"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.064" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.064" endtime="20220307 23:49:40.191"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.192" endtime="20220307 23:49:40.377"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:32.999" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:32.999" endtime="20220307 23:49:32.999"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:32.999" endtime="20220307 23:49:33.000"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.000" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.000" endtime="20220307 23:49:40.196"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.197" endtime="20220307 23:49:40.386"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:33.002" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:33.001" endtime="20220307 23:49:33.002"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:33.002" endtime="20220307 23:49:33.002"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.007" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.003" endtime="20220307 23:49:40.191"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.192" endtime="20220307 23:49:40.377"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:33.090" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:33.090" endtime="20220307 23:49:33.090"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:33.090" endtime="20220307 23:49:33.091"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.091" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.091" endtime="20220307 23:49:40.197"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.197" endtime="20220307 23:49:40.376"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:33.008" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:33.008" endtime="20220307 23:49:33.008"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:33.008" endtime="20220307 23:49:33.009"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.009" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.009" endtime="20220307 23:49:40.191"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.192" endtime="20220307 23:49:40.378"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:33.040" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:33.039" endtime="20220307 23:49:33.040"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:33.040" endtime="20220307 23:49:33.040"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.040" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.040" endtime="20220307 23:49:40.198"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.198" endtime="20220307 23:49:40.384"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:33.085" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:33.083" endtime="20220307 23:49:33.085"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:33.085" endtime="20220307 23:49:33.085"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.086" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.086" endtime="20220307 23:49:40.197"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.198" endtime="20220307 23:49:40.386"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${desired_caps}</var>
-<arg>enableVNC=${True}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220307 23:49:33.078" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220307 23:49:33.078" endtime="20220307 23:49:33.078"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${desired_caps}</arg>
-<arg>name=${SUITE NAME}</arg>
-<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220307 23:49:33.078" endtime="20220307 23:49:33.079"/>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
-<arg>None</arg>
-<arg>http://${HUB_URL}:4444/wd/hub</arg>
-<arg>desired_capabilities=${desired_caps}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 23:49:33.079" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220307 23:49:33.079" endtime="20220307 23:49:40.197"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220307 23:49:40.198" endtime="20220307 23:49:40.386"/>
-</kw>
-<status status="PASS" starttime="20220307 23:49:33.087" endtime="20220307 23:49:40.385"/>
-</kw>
 <test id="s1-t1" name="Animal Lion">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Animal</arg>
 <arg>Lion</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:08.764" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:08.763" endtime="20220307 23:54:08.764"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:08.764" endtime="20220307 23:54:08.765"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:08.767" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:08.765" endtime="20220307 23:54:15.483"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:15.486" endtime="20220307 23:54:15.675"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.761" endtime="20220307 23:54:15.676"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.388" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
-<status status="PASS" starttime="20220307 23:49:40.387" endtime="20220307 23:49:41.091"/>
+<msg timestamp="20220307 23:54:15.680" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
+<status status="PASS" starttime="20220307 23:54:15.677" endtime="20220307 23:54:16.451"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.093" level="INFO">Selecting options from selection list 'id:category' by label Lion.</msg>
-<status status="PASS" starttime="20220307 23:49:41.092" endtime="20220307 23:49:41.778"/>
+<msg timestamp="20220307 23:54:16.452" level="INFO">Selecting options from selection list 'id:category' by label Lion.</msg>
+<status status="PASS" starttime="20220307 23:54:16.451" endtime="20220307 23:54:17.088"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:41.780" level="INFO">Verifying list 'id:category' has option [ Lion ] selected.</msg>
-<msg timestamp="20220307 23:49:41.999" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:41.778" endtime="20220307 23:49:43.172"/>
+<msg timestamp="20220307 23:54:17.088" level="INFO">Verifying list 'id:category' has option [ Lion ] selected.</msg>
+<msg timestamp="20220307 23:54:17.281" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:17.088" endtime="20220307 23:54:19.603"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:43.174" level="INFO">Animal Lion</msg>
-<status status="PASS" starttime="20220307 23:49:43.173" endtime="20220307 23:49:43.175"/>
+<msg timestamp="20220307 23:54:19.605" level="INFO">Animal Lion</msg>
+<status status="PASS" starttime="20220307 23:54:19.604" endtime="20220307 23:54:19.606"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.386" endtime="20220307 23:49:43.176"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:19.606" endtime="20220307 23:54:19.767"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.385" endtime="20220307 23:49:43.176"/>
+<status status="PASS" starttime="20220307 23:54:08.760" endtime="20220307 23:54:19.769"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.758" endtime="20220307 23:54:19.770"/>
 </test>
 <test id="s1-t2" name="Animal Tiger">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Animal</arg>
 <arg>Tiger</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:08.962" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:08.962" endtime="20220307 23:54:08.962"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:08.962" endtime="20220307 23:54:08.962"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:08.964" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:08.962" endtime="20220307 23:54:15.679"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:15.681" endtime="20220307 23:54:15.894"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.961" endtime="20220307 23:54:15.895"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.387" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
-<status status="PASS" starttime="20220307 23:49:40.387" endtime="20220307 23:49:41.095"/>
+<msg timestamp="20220307 23:54:15.903" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
+<status status="PASS" starttime="20220307 23:54:15.901" endtime="20220307 23:54:16.687"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.096" level="INFO">Selecting options from selection list 'id:category' by label Tiger.</msg>
-<status status="PASS" starttime="20220307 23:49:41.096" endtime="20220307 23:49:41.915"/>
+<msg timestamp="20220307 23:54:16.688" level="INFO">Selecting options from selection list 'id:category' by label Tiger.</msg>
+<status status="PASS" starttime="20220307 23:54:16.688" endtime="20220307 23:54:17.495"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:41.917" level="INFO">Verifying list 'id:category' has option [ Tiger ] selected.</msg>
-<msg timestamp="20220307 23:49:42.136" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:41.915" endtime="20220307 23:49:44.287"/>
+<msg timestamp="20220307 23:54:17.497" level="INFO">Verifying list 'id:category' has option [ Tiger ] selected.</msg>
+<msg timestamp="20220307 23:54:17.914" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:17.496" endtime="20220307 23:54:20.134"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:44.290" level="INFO">Animal Tiger</msg>
-<status status="PASS" starttime="20220307 23:49:44.288" endtime="20220307 23:49:44.290"/>
+<msg timestamp="20220307 23:54:20.136" level="INFO">Animal Tiger</msg>
+<status status="PASS" starttime="20220307 23:54:20.135" endtime="20220307 23:54:20.137"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.386" endtime="20220307 23:49:44.290"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:20.137" endtime="20220307 23:54:20.295"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.385" endtime="20220307 23:49:44.291"/>
+<status status="PASS" starttime="20220307 23:54:08.961" endtime="20220307 23:54:20.296"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.961" endtime="20220307 23:54:20.297"/>
 </test>
 <test id="s1-t3" name="Cars BMW">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Cars</arg>
 <arg>BMW</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:09.015" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:09.014" endtime="20220307 23:54:09.015"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:09.015" endtime="20220307 23:54:09.015"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:09.016" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:09.015" endtime="20220307 23:54:14.965"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:14.967" endtime="20220307 23:54:15.174"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:09.014" endtime="20220307 23:54:15.175"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.393" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
-<status status="PASS" starttime="20220307 23:49:40.393" endtime="20220307 23:49:41.095"/>
+<msg timestamp="20220307 23:54:15.178" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
+<status status="PASS" starttime="20220307 23:54:15.176" endtime="20220307 23:54:15.949"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.097" level="INFO">Selecting options from selection list 'id:category' by label BMW.</msg>
-<status status="PASS" starttime="20220307 23:49:41.096" endtime="20220307 23:49:41.918"/>
+<msg timestamp="20220307 23:54:15.952" level="INFO">Selecting options from selection list 'id:category' by label BMW.</msg>
+<status status="PASS" starttime="20220307 23:54:15.950" endtime="20220307 23:54:16.766"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:41.920" level="INFO">Verifying list 'id:category' has option [ BMW ] selected.</msg>
-<msg timestamp="20220307 23:49:42.136" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:41.919" endtime="20220307 23:49:43.338"/>
+<msg timestamp="20220307 23:54:16.767" level="INFO">Verifying list 'id:category' has option [ BMW ] selected.</msg>
+<msg timestamp="20220307 23:54:16.987" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:16.766" endtime="20220307 23:54:18.378"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:43.343" level="INFO">Cars BMW</msg>
-<status status="PASS" starttime="20220307 23:49:43.342" endtime="20220307 23:49:43.344"/>
+<msg timestamp="20220307 23:54:18.381" level="INFO">Cars BMW</msg>
+<status status="PASS" starttime="20220307 23:54:18.379" endtime="20220307 23:54:18.381"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.392" endtime="20220307 23:49:43.344"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:18.382" endtime="20220307 23:54:18.557"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.392" endtime="20220307 23:49:43.345"/>
+<status status="PASS" starttime="20220307 23:54:09.014" endtime="20220307 23:54:18.558"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:09.013" endtime="20220307 23:54:18.560"/>
 </test>
 <test id="s1-t4" name="Cars Maruti">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Cars</arg>
 <arg>Maruti</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:09.039" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:09.039" endtime="20220307 23:54:09.039"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:09.040" endtime="20220307 23:54:09.040"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:09.040" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:09.040" endtime="20220307 23:54:13.939"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:13.941" endtime="20220307 23:54:14.117"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:09.039" endtime="20220307 23:54:14.119"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.389" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
-<status status="PASS" starttime="20220307 23:49:40.388" endtime="20220307 23:49:41.067"/>
+<msg timestamp="20220307 23:54:14.121" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
+<status status="PASS" starttime="20220307 23:54:14.119" endtime="20220307 23:54:14.960"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.069" level="INFO">Selecting options from selection list 'id:category' by label Maruti.</msg>
-<status status="PASS" starttime="20220307 23:49:41.068" endtime="20220307 23:49:41.835"/>
+<msg timestamp="20220307 23:54:14.963" level="INFO">Selecting options from selection list 'id:category' by label Maruti.</msg>
+<status status="PASS" starttime="20220307 23:54:14.961" endtime="20220307 23:54:15.755"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:41.838" level="INFO">Verifying list 'id:category' has option [ Maruti ] selected.</msg>
-<msg timestamp="20220307 23:49:42.055" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:41.836" endtime="20220307 23:49:43.227"/>
+<msg timestamp="20220307 23:54:15.758" level="INFO">Verifying list 'id:category' has option [ Maruti ] selected.</msg>
+<msg timestamp="20220307 23:54:15.977" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:15.756" endtime="20220307 23:54:17.151"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:43.228" level="INFO">Cars Maruti</msg>
-<status status="PASS" starttime="20220307 23:49:43.227" endtime="20220307 23:49:43.228"/>
+<msg timestamp="20220307 23:54:17.152" level="INFO">Cars Maruti</msg>
+<status status="PASS" starttime="20220307 23:54:17.152" endtime="20220307 23:54:17.152"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.387" endtime="20220307 23:49:43.228"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:17.152" endtime="20220307 23:54:17.281"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.385" endtime="20220307 23:49:43.229"/>
+<status status="PASS" starttime="20220307 23:54:09.039" endtime="20220307 23:54:17.282"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:09.038" endtime="20220307 23:54:17.283"/>
 </test>
 <test id="s1-t5" name="Cars Volkswagen">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Cars</arg>
 <arg>Volkswagen</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:16.845" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:16.844" endtime="20220307 23:54:16.845"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:16.845" endtime="20220307 23:54:16.845"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:16.845" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:16.845" endtime="20220307 23:54:23.835"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:23.837" endtime="20220307 23:54:24.013"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:16.844" endtime="20220307 23:54:24.015"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:48.057" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
-<status status="PASS" starttime="20220307 23:49:48.056" endtime="20220307 23:49:48.870"/>
+<msg timestamp="20220307 23:54:24.018" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
+<status status="PASS" starttime="20220307 23:54:24.016" endtime="20220307 23:54:24.568"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:48.872" level="INFO">Selecting options from selection list 'id:category' by label Volkswagen.</msg>
-<status status="PASS" starttime="20220307 23:49:48.871" endtime="20220307 23:49:49.672"/>
+<msg timestamp="20220307 23:54:24.570" level="INFO">Selecting options from selection list 'id:category' by label Volkswagen.</msg>
+<status status="PASS" starttime="20220307 23:54:24.568" endtime="20220307 23:54:25.127"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:49.672" level="INFO">Verifying list 'id:category' has option [ Volkswagen ] selected.</msg>
-<msg timestamp="20220307 23:49:49.847" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:49.672" endtime="20220307 23:49:50.890"/>
+<msg timestamp="20220307 23:54:25.131" level="INFO">Verifying list 'id:category' has option [ Volkswagen ] selected.</msg>
+<msg timestamp="20220307 23:54:25.275" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:25.129" endtime="20220307 23:54:26.143"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:50.893" level="INFO">Cars Volkswagen</msg>
-<status status="PASS" starttime="20220307 23:49:50.891" endtime="20220307 23:49:50.893"/>
+<msg timestamp="20220307 23:54:26.146" level="INFO">Cars Volkswagen</msg>
+<status status="PASS" starttime="20220307 23:54:26.144" endtime="20220307 23:54:26.146"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:48.056" endtime="20220307 23:49:50.894"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:26.147" endtime="20220307 23:54:26.269"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:48.054" endtime="20220307 23:49:50.895"/>
+<status status="PASS" starttime="20220307 23:54:16.844" endtime="20220307 23:54:26.270"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:16.843" endtime="20220307 23:54:26.271"/>
 </test>
 <test id="s1-t6" name="Animal Elephant">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Animal</arg>
 <arg>Elephant</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:08.985" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:08.985" endtime="20220307 23:54:08.985"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:08.985" endtime="20220307 23:54:08.985"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:08.986" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:08.986" endtime="20220307 23:54:13.651"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:13.653" endtime="20220307 23:54:13.834"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.985" endtime="20220307 23:54:13.835"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.385" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
-<status status="PASS" starttime="20220307 23:49:40.383" endtime="20220307 23:49:41.039"/>
+<msg timestamp="20220307 23:54:13.838" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
+<status status="PASS" starttime="20220307 23:54:13.836" endtime="20220307 23:54:14.379"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.042" level="INFO">Selecting options from selection list 'id:category' by label Elephant.</msg>
-<status status="PASS" starttime="20220307 23:49:41.040" endtime="20220307 23:49:41.813"/>
+<msg timestamp="20220307 23:54:14.382" level="INFO">Selecting options from selection list 'id:category' by label Elephant.</msg>
+<status status="PASS" starttime="20220307 23:54:14.380" endtime="20220307 23:54:15.017"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:41.815" level="INFO">Verifying list 'id:category' has option [ Elephant ] selected.</msg>
-<msg timestamp="20220307 23:49:42.023" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:41.814" endtime="20220307 23:49:43.249"/>
+<msg timestamp="20220307 23:54:15.021" level="INFO">Verifying list 'id:category' has option [ Elephant ] selected.</msg>
+<msg timestamp="20220307 23:54:15.236" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:15.019" endtime="20220307 23:54:16.452"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:43.251" level="INFO">Animal Elephant</msg>
-<status status="PASS" starttime="20220307 23:49:43.250" endtime="20220307 23:49:43.251"/>
+<msg timestamp="20220307 23:54:16.452" level="INFO">Animal Elephant</msg>
+<status status="PASS" starttime="20220307 23:54:16.452" endtime="20220307 23:54:16.452"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.382" endtime="20220307 23:49:43.251"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:16.452" endtime="20220307 23:54:16.615"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.379" endtime="20220307 23:49:43.252"/>
+<status status="PASS" starttime="20220307 23:54:08.984" endtime="20220307 23:54:16.615"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.984" endtime="20220307 23:54:16.616"/>
 </test>
 <test id="s1-t7" name="Animal Hippo">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Animal</arg>
 <arg>Hippo</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:09.001" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:09.000" endtime="20220307 23:54:09.001"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:09.001" endtime="20220307 23:54:09.001"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:09.002" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:09.001" endtime="20220307 23:54:13.545"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:13.546" endtime="20220307 23:54:13.722"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:09.000" endtime="20220307 23:54:13.723"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.388" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
-<status status="PASS" starttime="20220307 23:49:40.388" endtime="20220307 23:49:41.091"/>
+<msg timestamp="20220307 23:54:13.725" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
+<status status="PASS" starttime="20220307 23:54:13.723" endtime="20220307 23:54:14.262"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.093" level="INFO">Selecting options from selection list 'id:category' by label Hippo.</msg>
-<status status="PASS" starttime="20220307 23:49:41.091" endtime="20220307 23:49:42.083"/>
+<msg timestamp="20220307 23:54:14.264" level="INFO">Selecting options from selection list 'id:category' by label Hippo.</msg>
+<status status="PASS" starttime="20220307 23:54:14.263" endtime="20220307 23:54:14.847"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:42.085" level="INFO">Verifying list 'id:category' has option [ Hippo ] selected.</msg>
-<msg timestamp="20220307 23:49:42.300" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:42.083" endtime="20220307 23:49:43.505"/>
+<msg timestamp="20220307 23:54:14.850" level="INFO">Verifying list 'id:category' has option [ Hippo ] selected.</msg>
+<msg timestamp="20220307 23:54:15.068" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:14.848" endtime="20220307 23:54:16.338"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:43.506" level="INFO">Animal Hippo</msg>
-<status status="PASS" starttime="20220307 23:49:43.505" endtime="20220307 23:49:43.506"/>
+<msg timestamp="20220307 23:54:16.340" level="INFO">Animal Hippo</msg>
+<status status="PASS" starttime="20220307 23:54:16.339" endtime="20220307 23:54:16.340"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.387" endtime="20220307 23:49:43.506"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:16.340" endtime="20220307 23:54:16.506"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.386" endtime="20220307 23:49:43.506"/>
+<status status="PASS" starttime="20220307 23:54:09.000" endtime="20220307 23:54:16.506"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.999" endtime="20220307 23:54:16.506"/>
 </test>
 <test id="s1-t8" name="Bike Bajaj">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Bike</arg>
 <arg>Bajaj</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:09.001" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:09.000" endtime="20220307 23:54:09.001"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:09.001" endtime="20220307 23:54:09.001"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:09.002" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:09.001" endtime="20220307 23:54:14.873"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:14.876" endtime="20220307 23:54:15.069"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:09.000" endtime="20220307 23:54:15.072"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.383" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
-<status status="PASS" starttime="20220307 23:49:40.382" endtime="20220307 23:49:41.066"/>
+<msg timestamp="20220307 23:54:15.075" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
+<status status="PASS" starttime="20220307 23:54:15.072" endtime="20220307 23:54:15.839"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.069" level="INFO">Selecting options from selection list 'id:category' by label Bajaj.</msg>
-<status status="PASS" starttime="20220307 23:49:41.067" endtime="20220307 23:49:41.725"/>
+<msg timestamp="20220307 23:54:15.843" level="INFO">Selecting options from selection list 'id:category' by label Bajaj.</msg>
+<status status="PASS" starttime="20220307 23:54:15.840" endtime="20220307 23:54:16.506"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:41.727" level="INFO">Verifying list 'id:category' has option [ Bajaj ] selected.</msg>
-<msg timestamp="20220307 23:49:41.970" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:41.726" endtime="20220307 23:49:43.286"/>
+<msg timestamp="20220307 23:54:16.507" level="INFO">Verifying list 'id:category' has option [ Bajaj ] selected.</msg>
+<msg timestamp="20220307 23:54:16.715" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:16.506" endtime="20220307 23:54:18.984"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:43.287" level="INFO">Bike Bajaj</msg>
-<status status="PASS" starttime="20220307 23:49:43.286" endtime="20220307 23:49:43.288"/>
+<msg timestamp="20220307 23:54:18.987" level="INFO">Bike Bajaj</msg>
+<status status="PASS" starttime="20220307 23:54:18.985" endtime="20220307 23:54:18.987"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.381" endtime="20220307 23:49:43.288"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:18.988" endtime="20220307 23:54:19.156"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.379" endtime="20220307 23:49:43.289"/>
+<status status="PASS" starttime="20220307 23:54:09.000" endtime="20220307 23:54:19.158"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.997" endtime="20220307 23:54:19.159"/>
 </test>
 <test id="s1-t9" name="Bike Hero">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Bike</arg>
 <arg>Hero</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:09.022" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:09.021" endtime="20220307 23:54:09.022"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:09.022" endtime="20220307 23:54:09.022"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:09.023" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:09.022" endtime="20220307 23:54:13.745"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:13.746" endtime="20220307 23:54:13.919"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:09.021" endtime="20220307 23:54:13.920"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.383" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
-<status status="PASS" starttime="20220307 23:49:40.382" endtime="20220307 23:49:41.091"/>
+<msg timestamp="20220307 23:54:13.925" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
+<status status="PASS" starttime="20220307 23:54:13.921" endtime="20220307 23:54:14.490"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.093" level="INFO">Selecting options from selection list 'id:category' by label Hero.</msg>
-<status status="PASS" starttime="20220307 23:49:41.091" endtime="20220307 23:49:41.858"/>
+<msg timestamp="20220307 23:54:14.494" level="INFO">Selecting options from selection list 'id:category' by label Hero.</msg>
+<status status="PASS" starttime="20220307 23:54:14.492" endtime="20220307 23:54:15.175"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:41.860" level="INFO">Verifying list 'id:category' has option [ Hero ] selected.</msg>
-<msg timestamp="20220307 23:49:42.084" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:41.859" endtime="20220307 23:49:43.394"/>
+<msg timestamp="20220307 23:54:15.178" level="INFO">Verifying list 'id:category' has option [ Hero ] selected.</msg>
+<msg timestamp="20220307 23:54:15.451" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:15.176" endtime="20220307 23:54:16.768"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:43.395" level="INFO">Bike Hero</msg>
-<status status="PASS" starttime="20220307 23:49:43.394" endtime="20220307 23:49:43.395"/>
+<msg timestamp="20220307 23:54:16.768" level="INFO">Bike Hero</msg>
+<status status="PASS" starttime="20220307 23:54:16.768" endtime="20220307 23:54:16.768"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.380" endtime="20220307 23:49:43.395"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:16.768" endtime="20220307 23:54:16.931"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.378" endtime="20220307 23:49:43.395"/>
+<status status="PASS" starttime="20220307 23:54:09.019" endtime="20220307 23:54:16.931"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:09.019" endtime="20220307 23:54:16.931"/>
 </test>
 <test id="s1-t10" name="Bike TVS">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Bike</arg>
 <arg>TVS</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:08.955" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:08.955" endtime="20220307 23:54:08.955"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:08.955" endtime="20220307 23:54:08.955"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:08.956" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:08.955" endtime="20220307 23:54:13.332"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:13.334" endtime="20220307 23:54:13.515"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.954" endtime="20220307 23:54:13.516"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.384" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
-<status status="PASS" starttime="20220307 23:49:40.383" endtime="20220307 23:49:41.039"/>
+<msg timestamp="20220307 23:54:13.521" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
+<status status="PASS" starttime="20220307 23:54:13.517" endtime="20220307 23:54:14.067"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.042" level="INFO">Selecting options from selection list 'id:category' by label TVS.</msg>
-<status status="PASS" starttime="20220307 23:49:41.040" endtime="20220307 23:49:41.813"/>
+<msg timestamp="20220307 23:54:14.068" level="INFO">Selecting options from selection list 'id:category' by label TVS.</msg>
+<status status="PASS" starttime="20220307 23:54:14.067" endtime="20220307 23:54:14.609"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:41.815" level="INFO">Verifying list 'id:category' has option [ TVS ] selected.</msg>
-<msg timestamp="20220307 23:49:42.023" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:41.814" endtime="20220307 23:49:43.372"/>
+<msg timestamp="20220307 23:54:14.613" level="INFO">Verifying list 'id:category' has option [ TVS ] selected.</msg>
+<msg timestamp="20220307 23:54:14.792" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:14.610" endtime="20220307 23:54:16.140"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:43.373" level="INFO">Bike TVS</msg>
-<status status="PASS" starttime="20220307 23:49:43.372" endtime="20220307 23:49:43.373"/>
+<msg timestamp="20220307 23:54:16.144" level="INFO">Bike TVS</msg>
+<status status="PASS" starttime="20220307 23:54:16.142" endtime="20220307 23:54:16.144"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.381" endtime="20220307 23:49:43.373"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:16.145" endtime="20220307 23:54:16.306"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.380" endtime="20220307 23:49:43.373"/>
+<status status="PASS" starttime="20220307 23:54:08.954" endtime="20220307 23:54:16.307"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.954" endtime="20220307 23:54:16.308"/>
 </test>
 <test id="s1-t11" name="Bike Bullet">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Bike</arg>
 <arg>Bullet</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:08.977" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:08.977" endtime="20220307 23:54:08.977"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:08.977" endtime="20220307 23:54:08.977"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:08.978" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:08.978" endtime="20220307 23:54:13.331"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:13.334" endtime="20220307 23:54:13.515"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.977" endtime="20220307 23:54:13.516"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.388" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
-<status status="PASS" starttime="20220307 23:49:40.387" endtime="20220307 23:49:41.095"/>
+<msg timestamp="20220307 23:54:13.520" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
+<status status="PASS" starttime="20220307 23:54:13.517" endtime="20220307 23:54:15.145"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.096" level="INFO">Selecting options from selection list 'id:category' by label Bullet.</msg>
-<status status="PASS" starttime="20220307 23:49:41.095" endtime="20220307 23:49:41.914"/>
+<msg timestamp="20220307 23:54:15.148" level="INFO">Selecting options from selection list 'id:category' by label Bullet.</msg>
+<status status="PASS" starttime="20220307 23:54:15.146" endtime="20220307 23:54:15.924"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:41.917" level="INFO">Verifying list 'id:category' has option [ Bullet ] selected.</msg>
-<msg timestamp="20220307 23:49:42.136" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:41.915" endtime="20220307 23:49:43.450"/>
+<msg timestamp="20220307 23:54:15.928" level="INFO">Verifying list 'id:category' has option [ Bullet ] selected.</msg>
+<msg timestamp="20220307 23:54:16.140" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:15.925" endtime="20220307 23:54:17.416"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:43.451" level="INFO">Bike Bullet</msg>
-<status status="PASS" starttime="20220307 23:49:43.450" endtime="20220307 23:49:43.451"/>
+<msg timestamp="20220307 23:54:17.417" level="INFO">Bike Bullet</msg>
+<status status="PASS" starttime="20220307 23:54:17.416" endtime="20220307 23:54:17.417"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.386" endtime="20220307 23:49:43.451"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:17.417" endtime="20220307 23:54:17.575"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.385" endtime="20220307 23:49:43.451"/>
+<status status="PASS" starttime="20220307 23:54:08.976" endtime="20220307 23:54:17.575"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.976" endtime="20220307 23:54:17.576"/>
 </test>
 <test id="s1-t12" name="Bike Hayabusa">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Bike</arg>
 <arg>Hayabusa</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:08.944" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:08.943" endtime="20220307 23:54:08.944"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:08.944" endtime="20220307 23:54:08.944"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:08.945" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:08.944" endtime="20220307 23:54:15.479"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:15.482" endtime="20220307 23:54:15.677"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.943" endtime="20220307 23:54:15.679"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.388" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
-<status status="PASS" starttime="20220307 23:49:40.388" endtime="20220307 23:49:41.095"/>
+<msg timestamp="20220307 23:54:15.682" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
+<status status="PASS" starttime="20220307 23:54:15.679" endtime="20220307 23:54:16.452"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.096" level="INFO">Selecting options from selection list 'id:category' by label Hayabusa.</msg>
-<status status="PASS" starttime="20220307 23:49:41.096" endtime="20220307 23:49:41.918"/>
+<msg timestamp="20220307 23:54:16.452" level="INFO">Selecting options from selection list 'id:category' by label Hayabusa.</msg>
+<status status="PASS" starttime="20220307 23:54:16.452" endtime="20220307 23:54:17.190"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:41.919" level="INFO">Verifying list 'id:category' has option [ Hayabusa ] selected.</msg>
-<msg timestamp="20220307 23:49:42.136" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:41.918" endtime="20220307 23:49:43.450"/>
+<msg timestamp="20220307 23:54:17.193" level="INFO">Verifying list 'id:category' has option [ Hayabusa ] selected.</msg>
+<msg timestamp="20220307 23:54:17.415" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:17.191" endtime="20220307 23:54:19.711"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:43.450" level="INFO">Bike Hayabusa</msg>
-<status status="PASS" starttime="20220307 23:49:43.450" endtime="20220307 23:49:43.451"/>
+<msg timestamp="20220307 23:54:19.714" level="INFO">Bike Hayabusa</msg>
+<status status="PASS" starttime="20220307 23:54:19.713" endtime="20220307 23:54:19.715"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.387" endtime="20220307 23:49:43.451"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220307 23:54:19.715" endtime="20220307 23:54:19.874"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.387" endtime="20220307 23:49:43.451"/>
+<status status="PASS" starttime="20220307 23:54:08.943" endtime="20220307 23:54:19.874"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.943" endtime="20220307 23:54:19.875"/>
 </test>
 <test id="s1-t13" name="Cars Mercedes">
 <kw name="Select By Value And Label To Verify Selection">
 <arg>Cars</arg>
 <arg>Mercedes</arg>
+<kw name="Browser Setup">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${desired_caps}</var>
+<arg>enableVNC=${True}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220307 23:54:08.983" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220307 23:54:08.983" endtime="20220307 23:54:08.983"/>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<arg>${desired_caps}</arg>
+<arg>name=${SUITE NAME}</arg>
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<status status="PASS" starttime="20220307 23:54:08.983" endtime="20220307 23:54:08.984"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${HUB_URL}:4444/wd/hub</arg>
+<arg>desired_capabilities=${desired_caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220307 23:54:08.984" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220307 23:54:08.984" endtime="20220307 23:54:13.536"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220307 23:54:13.538" endtime="20220307 23:54:13.713"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.983" endtime="20220307 23:54:13.714"/>
+</kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220307 23:49:40.389" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
-<status status="PASS" starttime="20220307 23:49:40.388" endtime="20220307 23:49:41.090"/>
+<msg timestamp="20220307 23:54:13.716" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
+<status status="PASS" starttime="20220307 23:54:13.714" endtime="20220307 23:54:14.261"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220307 23:49:41.093" level="INFO">Selecting options from selection list 'id:category' by label Mercedes.</msg>
-<status status="PASS" starttime="20220307 23:49:41.091" endtime="20220307 23:49:41.757"/>
+<msg timestamp="20220307 23:54:14.263" level="INFO">Selecting options from selection list 'id:category' by label Mercedes.</msg>
+<status status="PASS" starttime="20220307 23:54:14.262" endtime="20220307 23:54:14.742"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220307 23:49:41.760" level="INFO">Verifying list 'id:category' has option [ Mercedes ] selected.</msg>
-<msg timestamp="20220307 23:49:41.971" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220307 23:49:41.758" endtime="20220307 23:49:43.173"/>
+<msg timestamp="20220307 23:54:14.745" level="INFO">Verifying list 'id:category' has option [ Mercedes ] selected.</msg>
+<msg timestamp="20220307 23:54:14.959" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220307 23:54:14.743" endtime="20220307 23:54:16.253"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220307 23:49:43.175" level="INFO">Cars Mercedes</msg>
-<status status="PASS" starttime="20220307 23:49:43.174" endtime="20220307 23:49:43.175"/>
+<msg timestamp="20220307 23:54:16.256" level="INFO">Cars Mercedes</msg>
+<status status="PASS" starttime="20220307 23:54:16.255" endtime="20220307 23:54:16.257"/>
 </kw>
-<status status="PASS" starttime="20220307 23:49:40.388" endtime="20220307 23:49:43.176"/>
-</kw>
-<status status="PASS" starttime="20220307 23:49:40.387" endtime="20220307 23:49:43.176"/>
-</test>
-<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220307 23:49:43.178" endtime="20220307 23:49:43.337"/>
+<status status="PASS" starttime="20220307 23:54:16.257" endtime="20220307 23:54:16.396"/>
 </kw>
+<status status="PASS" starttime="20220307 23:54:08.982" endtime="20220307 23:54:16.396"/>
+</kw>
+<status status="PASS" starttime="20220307 23:54:08.982" endtime="20220307 23:54:16.396"/>
+</test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 13 executions.</doc>
-<status status="PASS" starttime="20220307 23:49:32.634" endtime="20220307 23:49:51.053"/>
+<status status="PASS" starttime="20220307 23:54:08.436" endtime="20220307 23:54:26.274"/>
 </suite>
 <statistics>
 <total>
