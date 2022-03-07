@@ -4,6 +4,7 @@ Library             SeleniumLibrary
 
 # Suite Setup         Browser Setup
 # Suite Teardown      Close All Browsers
+Default Tags        animal
 Test Template       Select By Value And Label To Verify Selection
 
 *** Variables ***
@@ -13,20 +14,22 @@ ${HUB_URL}              test:test-password@192.168.50.173
 ${pcategoryLocator}     id:pcategory
 ${categoryLocator}      id:category
 
-*** Test Cases ***      pcategoryValue      categoryLabel
-Animal Lion             Animal              Lion
-Animal Tiger            Animal              Tiger
-Animal Elephant         Animal              Elephant
-Animal Hippo            Animal              Hippo
-Bike Bajaj              Bike                Bajaj
-Bike Hero               Bike                Hero
-Bike TVS                Bike                TVS
-Bike Bullet             Bike                Bullet
-Bike Hayabusa           Bike                Hayabusa
-Cars Mercedes           Cars                Mercedes
-Cars BMW                Cars                BMW
-Cars Maruti             Cars                Maruti
-Cars Volkswagen         Cars                Volkswagen
+*** Test Cases ***      ${pcategoryValue}       ${categoryLabel}
+Animal Lion             Animal                  Lion
+Animal Tiger            Animal                  Tiger
+Animal Elephant         Animal                  Elephant        
+Animal Hippo            Animal                  Hippo
+Bike Bajaj              Bike                    Bajaj
+                        [Tags]                  bike            
+Bike Hero               Bike                    Hero
+                        [Tags]                  bike
+Bike TVS                Bike                    TVS
+Bike Bullet             Bike                    Bullet
+Bike Hayabusa           Bike                    Hayabusa
+Cars Mercedes           Cars                    Mercedes
+Cars BMW                Cars                    BMW
+Cars Maruti             Cars                    Maruti
+Cars Volkswagen         Cars                    Volkswagen
 
 *** Keywords ***
 Select By Value And Label To Verify Selection
