@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.1 (Python 3.9.10 on darwin)" generated="20220210 23:44:27.415" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.1 (Python 3.9.10 on darwin)" generated="20220226 15:56:02.667" rpa="false" schemaversion="2">
 <suite id="s1" name="Selenium Grid Example" source="/Users/mukeshtiwari/Documents/shastra/ncore_app/robotframework-dropdown-sample/Test_Suites/selenium_grid_example.robot">
 <kw name="Browser Setup" type="SETUP">
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${desired_caps}</var>
 <arg>enableVNC=${True}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220210 23:44:29.274" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
-<status status="PASS" starttime="20220210 23:44:29.274" endtime="20220210 23:44:29.275"/>
+<msg timestamp="20220226 15:56:02.820" level="INFO">${desired_caps} = {'enableVNC': True}</msg>
+<status status="PASS" starttime="20220226 15:56:02.820" endtime="20220226 15:56:02.820"/>
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <arg>${desired_caps}</arg>
 <arg>name=${SUITE NAME}</arg>
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20220210 23:44:29.275" endtime="20220210 23:44:29.275"/>
+<status status="PASS" starttime="20220226 15:56:02.820" endtime="20220226 15:56:02.820"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
@@ -22,14 +22,14 @@
 <arg>http://${HUB_URL}:4444/wd/hub</arg>
 <arg>desired_capabilities=${desired_caps}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220210 23:44:29.276" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
-<status status="PASS" starttime="20220210 23:44:29.275" endtime="20220210 23:44:49.955"/>
+<msg timestamp="20220226 15:56:02.821" level="INFO">Opening browser 'Chrome' to base url 'http://test.mukeshtiwari.com/cascading_dropdown/' through remote server at 'http://test:test-password@192.168.50.173:4444/wd/hub'.</msg>
+<status status="PASS" starttime="20220226 15:56:02.820" endtime="20220226 15:56:09.104"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220210 23:44:49.956" endtime="20220210 23:44:50.364"/>
+<status status="PASS" starttime="20220226 15:56:09.104" endtime="20220226 15:56:09.322"/>
 </kw>
-<status status="PASS" starttime="20220210 23:44:29.272" endtime="20220210 23:44:50.365"/>
+<status status="PASS" starttime="20220226 15:56:02.819" endtime="20220226 15:56:09.322"/>
 </kw>
 <test id="s1-t1" name="Animal Lion">
 <kw name="Select By Value And Label To Verify Selection">
@@ -39,480 +39,48 @@
 <arg>${pcategoryLocator}</arg>
 <arg>${pcategoryValue}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:44:52.008" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
-<status status="PASS" starttime="20220210 23:44:52.007" endtime="20220210 23:44:54.065"/>
+<msg timestamp="20220226 15:56:09.325" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
+<status status="PASS" starttime="20220226 15:56:09.324" endtime="20220226 15:56:10.365"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:44:54.067" level="INFO">Selecting options from selection list 'id:category' by label Lion.</msg>
-<status status="PASS" starttime="20220210 23:44:54.066" endtime="20220210 23:44:54.670"/>
+<msg timestamp="20220226 15:56:10.365" level="INFO">Selecting options from selection list 'id:category' by label Lion.</msg>
+<status status="PASS" starttime="20220226 15:56:10.365" endtime="20220226 15:56:11.604"/>
 </kw>
 <kw name="List Selection Should Be" library="SeleniumLibrary">
 <arg>${categoryLocator}</arg>
 <arg>${categoryLabel}</arg>
 <doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:44:54.671" level="INFO">Verifying list 'id:category' has option [ Lion ] selected.</msg>
-<msg timestamp="20220210 23:44:54.843" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:44:54.670" endtime="20220210 23:44:55.984"/>
+<msg timestamp="20220226 15:56:11.605" level="INFO">Verifying list 'id:category' has option [ Lion ] selected.</msg>
+<msg timestamp="20220226 15:56:12.050" level="INFO">Current page contains list 'id:category'.</msg>
+<status status="PASS" starttime="20220226 15:56:11.605" endtime="20220226 15:56:14.201"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${TEST NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:44:55.985" level="INFO">Animal Lion</msg>
-<status status="PASS" starttime="20220210 23:44:55.984" endtime="20220210 23:44:55.985"/>
+<msg timestamp="20220226 15:56:14.202" level="INFO">Animal Lion</msg>
+<status status="PASS" starttime="20220226 15:56:14.201" endtime="20220226 15:56:14.202"/>
 </kw>
-<status status="PASS" starttime="20220210 23:44:52.006" endtime="20220210 23:44:55.985"/>
+<status status="PASS" starttime="20220226 15:56:09.323" endtime="20220226 15:56:14.203"/>
 </kw>
-<status status="PASS" starttime="20220210 23:44:50.365" endtime="20220210 23:44:55.985"/>
-</test>
-<test id="s1-t2" name="Animal Tiger">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Animal</arg>
-<arg>Tiger</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:45:00.602" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
-<status status="PASS" starttime="20220210 23:45:00.601" endtime="20220210 23:45:01.604"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:45:01.604" level="INFO">Selecting options from selection list 'id:category' by label Tiger.</msg>
-<status status="PASS" starttime="20220210 23:45:01.604" endtime="20220210 23:45:02.405"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:45:02.407" level="INFO">Verifying list 'id:category' has option [ Tiger ] selected.</msg>
-<msg timestamp="20220210 23:45:03.172" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:45:02.406" endtime="20220210 23:45:04.493"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:45:04.494" level="INFO">Animal Tiger</msg>
-<status status="PASS" starttime="20220210 23:45:04.493" endtime="20220210 23:45:04.494"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:00.600" endtime="20220210 23:45:04.495"/>
-</kw>
-<status status="PASS" starttime="20220210 23:44:57.582" endtime="20220210 23:45:04.495"/>
-</test>
-<test id="s1-t3" name="Animal Elephant">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Animal</arg>
-<arg>Elephant</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:45:08.910" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
-<status status="PASS" starttime="20220210 23:45:08.908" endtime="20220210 23:45:09.454"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:45:09.456" level="INFO">Selecting options from selection list 'id:category' by label Elephant.</msg>
-<status status="PASS" starttime="20220210 23:45:09.455" endtime="20220210 23:45:10.204"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:45:10.206" level="INFO">Verifying list 'id:category' has option [ Elephant ] selected.</msg>
-<msg timestamp="20220210 23:45:10.390" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:45:10.205" endtime="20220210 23:45:11.493"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:45:11.494" level="INFO">Animal Elephant</msg>
-<status status="PASS" starttime="20220210 23:45:11.493" endtime="20220210 23:45:11.494"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:08.907" endtime="20220210 23:45:11.494"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:07.273" endtime="20220210 23:45:11.494"/>
-</test>
-<test id="s1-t4" name="Animal Hippo">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Animal</arg>
-<arg>Hippo</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:45:15.559" level="INFO">Selecting options from selection list 'id:pcategory' by value Animal.</msg>
-<status status="PASS" starttime="20220210 23:45:15.558" endtime="20220210 23:45:16.080"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:45:16.082" level="INFO">Selecting options from selection list 'id:category' by label Hippo.</msg>
-<status status="PASS" starttime="20220210 23:45:16.081" endtime="20220210 23:45:16.799"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:45:16.801" level="INFO">Verifying list 'id:category' has option [ Hippo ] selected.</msg>
-<msg timestamp="20220210 23:45:16.983" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:45:16.800" endtime="20220210 23:45:18.076"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:45:18.077" level="INFO">Animal Hippo</msg>
-<status status="PASS" starttime="20220210 23:45:18.076" endtime="20220210 23:45:18.077"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:15.556" endtime="20220210 23:45:18.078"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:13.883" endtime="20220210 23:45:18.078"/>
-</test>
-<test id="s1-t5" name="Bike Bajaj">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Bike</arg>
-<arg>Bajaj</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:45:21.153" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
-<status status="PASS" starttime="20220210 23:45:21.152" endtime="20220210 23:45:21.988"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:45:21.989" level="INFO">Selecting options from selection list 'id:category' by label Bajaj.</msg>
-<status status="PASS" starttime="20220210 23:45:21.988" endtime="20220210 23:45:22.600"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:45:22.601" level="INFO">Verifying list 'id:category' has option [ Bajaj ] selected.</msg>
-<msg timestamp="20220210 23:45:22.803" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:45:22.600" endtime="20220210 23:45:24.090"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:45:24.091" level="INFO">Bike Bajaj</msg>
-<status status="PASS" starttime="20220210 23:45:24.090" endtime="20220210 23:45:24.092"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:21.151" endtime="20220210 23:45:24.092"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:19.683" endtime="20220210 23:45:24.092"/>
-</test>
-<test id="s1-t6" name="Bike Hero">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Bike</arg>
-<arg>Hero</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:45:28.376" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
-<status status="PASS" starttime="20220210 23:45:28.375" endtime="20220210 23:45:28.955"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:45:28.957" level="INFO">Selecting options from selection list 'id:category' by label Hero.</msg>
-<status status="PASS" starttime="20220210 23:45:28.956" endtime="20220210 23:45:29.709"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:45:29.711" level="INFO">Verifying list 'id:category' has option [ Hero ] selected.</msg>
-<msg timestamp="20220210 23:45:29.896" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:45:29.709" endtime="20220210 23:45:31.201"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:45:31.203" level="INFO">Bike Hero</msg>
-<status status="PASS" starttime="20220210 23:45:31.202" endtime="20220210 23:45:31.203"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:28.374" endtime="20220210 23:45:31.203"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:25.701" endtime="20220210 23:45:31.204"/>
-</test>
-<test id="s1-t7" name="Bike TVS">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Bike</arg>
-<arg>TVS</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:45:34.460" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
-<status status="PASS" starttime="20220210 23:45:34.459" endtime="20220210 23:45:35.037"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:45:35.038" level="INFO">Selecting options from selection list 'id:category' by label TVS.</msg>
-<status status="PASS" starttime="20220210 23:45:35.037" endtime="20220210 23:45:35.898"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:45:35.899" level="INFO">Verifying list 'id:category' has option [ TVS ] selected.</msg>
-<msg timestamp="20220210 23:45:36.080" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:45:35.898" endtime="20220210 23:45:37.275"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:45:37.276" level="INFO">Bike TVS</msg>
-<status status="PASS" starttime="20220210 23:45:37.275" endtime="20220210 23:45:37.276"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:34.458" endtime="20220210 23:45:37.276"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:32.876" endtime="20220210 23:45:37.276"/>
-</test>
-<test id="s1-t8" name="Bike Bullet">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Bike</arg>
-<arg>Bullet</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:45:40.567" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
-<status status="PASS" starttime="20220210 23:45:40.566" endtime="20220210 23:45:41.146"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:45:41.149" level="INFO">Selecting options from selection list 'id:category' by label Bullet.</msg>
-<status status="PASS" starttime="20220210 23:45:41.147" endtime="20220210 23:45:41.897"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:45:41.899" level="INFO">Verifying list 'id:category' has option [ Bullet ] selected.</msg>
-<msg timestamp="20220210 23:45:42.080" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:45:41.897" endtime="20220210 23:45:43.300"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:45:43.302" level="INFO">Bike Bullet</msg>
-<status status="PASS" starttime="20220210 23:45:43.301" endtime="20220210 23:45:43.302"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:40.565" endtime="20220210 23:45:43.302"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:38.929" endtime="20220210 23:45:43.303"/>
-</test>
-<test id="s1-t9" name="Bike Hayabusa">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Bike</arg>
-<arg>Hayabusa</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:45:46.510" level="INFO">Selecting options from selection list 'id:pcategory' by value Bike.</msg>
-<status status="PASS" starttime="20220210 23:45:46.510" endtime="20220210 23:45:47.414"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:45:47.415" level="INFO">Selecting options from selection list 'id:category' by label Hayabusa.</msg>
-<status status="PASS" starttime="20220210 23:45:47.414" endtime="20220210 23:45:49.059"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:45:49.061" level="INFO">Verifying list 'id:category' has option [ Hayabusa ] selected.</msg>
-<msg timestamp="20220210 23:45:49.503" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:45:49.059" endtime="20220210 23:45:51.217"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:45:51.218" level="INFO">Bike Hayabusa</msg>
-<status status="PASS" starttime="20220210 23:45:51.217" endtime="20220210 23:45:51.218"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:46.509" endtime="20220210 23:45:51.219"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:44.862" endtime="20220210 23:45:51.219"/>
-</test>
-<test id="s1-t10" name="Cars Mercedes">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Cars</arg>
-<arg>Mercedes</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:45:54.294" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
-<status status="PASS" starttime="20220210 23:45:54.293" endtime="20220210 23:45:55.209"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:45:55.210" level="INFO">Selecting options from selection list 'id:category' by label Mercedes.</msg>
-<status status="PASS" starttime="20220210 23:45:55.210" endtime="20220210 23:45:56.140"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:45:56.141" level="INFO">Verifying list 'id:category' has option [ Mercedes ] selected.</msg>
-<msg timestamp="20220210 23:45:56.326" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:45:56.140" endtime="20220210 23:45:57.509"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:45:57.510" level="INFO">Cars Mercedes</msg>
-<status status="PASS" starttime="20220210 23:45:57.509" endtime="20220210 23:45:57.510"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:54.292" endtime="20220210 23:45:57.510"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:52.697" endtime="20220210 23:45:57.511"/>
-</test>
-<test id="s1-t11" name="Cars BMW">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Cars</arg>
-<arg>BMW</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:46:00.751" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
-<status status="PASS" starttime="20220210 23:46:00.750" endtime="20220210 23:46:01.607"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:46:01.609" level="INFO">Selecting options from selection list 'id:category' by label BMW.</msg>
-<status status="PASS" starttime="20220210 23:46:01.607" endtime="20220210 23:46:02.320"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:46:02.321" level="INFO">Verifying list 'id:category' has option [ BMW ] selected.</msg>
-<msg timestamp="20220210 23:46:02.507" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:46:02.321" endtime="20220210 23:46:03.893"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:46:03.894" level="INFO">Cars BMW</msg>
-<status status="PASS" starttime="20220210 23:46:03.893" endtime="20220210 23:46:03.894"/>
-</kw>
-<status status="PASS" starttime="20220210 23:46:00.748" endtime="20220210 23:46:03.895"/>
-</kw>
-<status status="PASS" starttime="20220210 23:45:59.105" endtime="20220210 23:46:03.895"/>
-</test>
-<test id="s1-t12" name="Cars Maruti">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Cars</arg>
-<arg>Maruti</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:46:07.157" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
-<status status="PASS" starttime="20220210 23:46:07.155" endtime="20220210 23:46:08.105"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:46:08.107" level="INFO">Selecting options from selection list 'id:category' by label Maruti.</msg>
-<status status="PASS" starttime="20220210 23:46:08.106" endtime="20220210 23:46:09.746"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:46:09.748" level="INFO">Verifying list 'id:category' has option [ Maruti ] selected.</msg>
-<msg timestamp="20220210 23:46:10.121" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:46:09.747" endtime="20220210 23:46:11.322"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:46:11.324" level="INFO">Cars Maruti</msg>
-<status status="PASS" starttime="20220210 23:46:11.323" endtime="20220210 23:46:11.324"/>
-</kw>
-<status status="PASS" starttime="20220210 23:46:07.154" endtime="20220210 23:46:11.324"/>
-</kw>
-<status status="PASS" starttime="20220210 23:46:05.550" endtime="20220210 23:46:11.325"/>
-</test>
-<test id="s1-t13" name="Cars Volkswagen">
-<kw name="Select By Value And Label To Verify Selection">
-<arg>Cars</arg>
-<arg>Volkswagen</arg>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>${pcategoryLocator}</arg>
-<arg>${pcategoryValue}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220210 23:46:14.668" level="INFO">Selecting options from selection list 'id:pcategory' by value Cars.</msg>
-<status status="PASS" starttime="20220210 23:46:14.666" endtime="20220210 23:46:15.246"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220210 23:46:15.248" level="INFO">Selecting options from selection list 'id:category' by label Volkswagen.</msg>
-<status status="PASS" starttime="20220210 23:46:15.247" endtime="20220210 23:46:16.107"/>
-</kw>
-<kw name="List Selection Should Be" library="SeleniumLibrary">
-<arg>${categoryLocator}</arg>
-<arg>${categoryLabel}</arg>
-<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
-<msg timestamp="20220210 23:46:16.109" level="INFO">Verifying list 'id:category' has option [ Volkswagen ] selected.</msg>
-<msg timestamp="20220210 23:46:16.296" level="INFO">Current page contains list 'id:category'.</msg>
-<status status="PASS" starttime="20220210 23:46:16.108" endtime="20220210 23:46:17.465"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${TEST NAME}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220210 23:46:17.466" level="INFO">Cars Volkswagen</msg>
-<status status="PASS" starttime="20220210 23:46:17.466" endtime="20220210 23:46:17.467"/>
-</kw>
-<status status="PASS" starttime="20220210 23:46:14.664" endtime="20220210 23:46:17.467"/>
-</kw>
-<status status="PASS" starttime="20220210 23:46:13.022" endtime="20220210 23:46:17.468"/>
+<status status="PASS" starttime="20220226 15:56:09.322" endtime="20220226 15:56:14.203"/>
 </test>
 <kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220210 23:46:19.131" endtime="20220210 23:46:19.310"/>
+<status status="PASS" starttime="20220226 15:56:14.408" endtime="20220226 15:56:14.712"/>
 </kw>
-<status status="PASS" starttime="20220210 23:44:27.469" endtime="20220210 23:46:19.310"/>
+<status status="PASS" starttime="20220226 15:56:02.728" endtime="20220226 15:56:14.713"/>
 </suite>
 <statistics>
 <total>
-<stat pass="13" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="13" fail="0" skip="0" id="s1" name="Selenium Grid Example">Selenium Grid Example</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Selenium Grid Example">Selenium Grid Example</stat>
 </suite>
 </statistics>
 <errors>
