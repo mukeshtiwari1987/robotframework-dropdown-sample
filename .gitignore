@@ -155,6 +155,9 @@ cython_debug/
 Result_With_CSV/
 Result_With_Grid/
 Result_Without_CSV/
+log.html
+output.xml
+report.html
 
 # Ignore pabotsuitenames
 .pabotsuitenames
