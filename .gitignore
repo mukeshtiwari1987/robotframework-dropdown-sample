@@ -152,9 +152,7 @@ cython_debug/
 #.idea/
 
 # Ignore Result folder
-Result_With_CSV/
-Result_With_Grid/
-Result_Without_CSV/
+Results/
 log.html
 output.xml
 report.html
