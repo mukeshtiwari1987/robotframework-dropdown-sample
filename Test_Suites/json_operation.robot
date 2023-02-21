@@ -7,6 +7,8 @@ Library         Collections
 Suite Setup     Run Keywords    Get Timeinepoch
 #https://stackoverflow.com/questions/47283542/edit-a-json-file-in-robot-framework
 
+Force Tags          docker
+
 *** Variables ***
 ${SUBSCRIBER_A}     phone1
 
